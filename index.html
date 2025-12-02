@@ -5,14 +5,57 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Bruno — Portfolio</title>
 
+  <!-- ✅ SEO BASIC -->
+  <meta name="description" content="Портфолио Bruno — Python разработчик, web-разработчик, проекты, сертификаты, контакты.">
+  <meta name="keywords" content="Bruno, портфолио Bruno, Python разработчик, web developer, проекты Bruno, разработчик Казахстан">
+  <meta name="author" content="Bruno">
+
+  <!-- ✅ SEARCH INDEXING -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sakura52008.github.io/" />
+
+  <!-- ✅ Open Graph -->
+  <meta property="og:title" content="Bruno — Portfolio">
+  <meta property="og:description" content="Портфолио Bruno — Python разработчик, проекты, обучение и сертификаты.">
+  <meta property="og:image" content="https://sakura52008.github.io/images/converted_image.jpg">
+  <meta property="og:url" content="https://sakura52008.github.io/">
+  <meta property="og:type" content="website">
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bruno — Portfolio">
+  <meta name="twitter:description" content="Портфолио Bruno — Python разработчик, проекты и контакты.">
+  <meta name="twitter:image" content="https://sakura52008.github.io/images/converted_image.jpg">
+
+  <!-- ✅ Favicon (если файла нет — можешь загрузить позже) -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <!-- ✅ JSON-LD структурированные данные -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Bruno",
+    "url": "https://sakura52008.github.io/",
+    "image": "https://sakura52008.github.io/images/converted_image.jpg",
+    "jobTitle": "Python Developer",
+    "description": "Портфолио Python разработчика Bruno",
+    "sameAs": [
+      "https://github.com/Sakura52008",
+      "https://t.me/+77058838205"
+    ]
+  }
+  </script>
+
   <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 
   <!-- i18next -->
   <script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js"></script>
 </head>
+
 <body>
 <!-- Header / Navigation -->
 <header class="site-header">
@@ -23,7 +66,7 @@
       <div class="brand-name">Bruno</div>
     </div>
 
-    <!-- Навигация с i18n ключами -->
+    <!-- Навигация -->
     <nav class="nav">
       <a href="#hero" data-i18n="nav.home">Начало</a>
       <a href="#education" data-i18n="nav.education">Образование</a>
@@ -32,7 +75,7 @@
       <a href="#contacts" data-i18n="nav.contacts">Контакты</a>
     </nav>
 
-    <!-- Селектор языка -->
+    <!-- Selector -->
     <div class="controls">
       <select id="langSelect" aria-label="Select language">
         <option value="ru">Рус</option>
@@ -69,7 +112,7 @@
       <div class="edu-grid">
         <div class="edu-card">
           <h3 data-i18n="education.title">Я обучаюсь в Республиканском Высшем Техническом Колледже (РВТК) города Уральска по направлению «Программное обеспечение».</h3>
-          <p data-i18n="education.text">Это современный колледж, где большое внимание уделяется практическим навыкам и реальной разработке. Обучение сочетает в себе изучение языков программирования, основ кибербезопасности и проектирования приложений. Здесь я получаю фундаментальные знания, необходимые для карьеры в сфере IT и будущего профессионального роста.</p>
+          <p data-i18n="education.text">Это современный колледж, где большое внимание уделяется практическим навыкам…</p>
         </div>
 
         <div class="diploma-placeholder">
@@ -92,8 +135,8 @@
           <img src="images/certs.card.jpg" alt="Сертификат — Создание сайтов с нуля" class="cert-img">
           <div class="cert-content">
             <h3 data-i18n="certs.card1.title">Создание сайтов с нуля</h3>
-            <p data-i18n="certs.card1.desc">Курс по основам веб-разработки — HTML, CSS, адаптивная вёрстка.</p>
-            <a href="https://skills.enbek.kz/users/user_966438/course_440_certificate_ru.pdf" target="_blank" class="cert-btn" data-i18n="certs.card1.btn">Смотреть сертификат</a>
+            <p data-i18n="certs.card1.desc">Курс по основам веб-разработки…</p>
+            <a href="https://skills.enbek.kz/users/user_966438/course_440_certificate_ru.pdf" target="_blank" class="cert-btn">Смотреть сертификат</a>
           </div>
         </div>
 
@@ -102,8 +145,8 @@
           <img src="images/course_444_certificate_ru_page-0001.jpg" alt="Сертификат — Андроид разработчик" class="cert-img">
           <div class="cert-content">
             <h3 data-i18n="certs.card2.title">Андроид разработчик</h3>
-            <p data-i18n="certs.card2.desc">Изучение основ Kotlin и создание мобильных приложений.</p>
-            <a href="https://skills.enbek.kz/users/user_966438/course_444_certificate_ru.pdf" target="_blank" class="cert-btn" data-i18n="certs.card2.btn">Смотреть сертификат</a>
+            <p data-i18n="certs.card2.desc">Изучение основ Kotlin…</p>
+            <a href="https://skills.enbek.kz/users/user_966438/course_444_certificate_ru.pdf" target="_blank" class="cert-btn">Смотреть сертификат</a>
           </div>
         </div>
 
@@ -112,8 +155,8 @@
           <img src="images/course_520_certificate_ru_page-0001.jpg" alt="Сертификат — Джава старт" class="cert-img">
           <div class="cert-content">
             <h3 data-i18n="certs.card3.title">Джава старт</h3>
-            <p data-i18n="certs.card3.desc">Базовый курс по Java, объектно-ориентированное программирование.</p>
-            <a href="https://skills.enbek.kz/users/user_966438/course_520_certificate_ru.pdf" target="_blank" class="cert-btn" data-i18n="certs.card3.btn">Смотреть сертификат</a>
+            <p data-i18n="certs.card3.desc">Базовый курс по Java…</p>
+            <a href="https://skills.enbek.kz/users/user_966438/course_520_certificate_ru.pdf" target="_blank" class="cert-btn">Смотреть сертификат</a>
           </div>
         </div>
 
@@ -122,8 +165,8 @@
           <img src="images/certs.card1.jpg" alt="Сертификат — Копирайтинг" class="cert-img">
           <div class="cert-content">
             <h3 data-i18n="certs.card4.title">Копирайтинг</h3>
-            <p data-i18n="certs.card4.desc">Курс по созданию текстов, которые привлекают внимание и продают.</p>
-            <a href="https://skills.enbek.kz/users/user_966438/course_54_certificate_ru.pdf" target="_blank" class="cert-btn" data-i18n="certs.card4.btn">Смотреть сертификат</a>
+            <p data-i18n="certs.card4.desc">Курс по созданию текстов…</p>
+            <a href="https://skills.enbek.kz/users/user_966438/course_54_certificate_ru.pdf" target="_blank" class="cert-btn">Смотреть сертификат</a>
           </div>
         </div>
       </div>
@@ -140,9 +183,9 @@
         <div class="project-card">
           <img src="images/0001.jpg" alt="Скрин проекта 1" class="project-img">
           <div class="project-content">
-            <h3 data-i18n="projects.card1.title">Реализована Q&A-система на базе ChromaDB и Gemini API.</h3>
-            <p data-i18n="projects.card1.desc">Контент из авторской книги индексируется в векторной базе, по запросу извлекаются релевантные фрагменты и передаются нейросети для генерации точного ответа.</p>
-            <a href="https://github.com/Sakura52008/A-Q-A-system-based-on-ChromaDB-and-Gemini-API-has-been-implemented..git" target="_blank" class="project-btn" data-i18n="projects.card1.btn">Смотреть проект</a>
+            <h3 data-i18n="projects.card1.title">Q&A-система</h3>
+            <p data-i18n="projects.card1.desc">Контент из книги индексируется…</p>
+            <a href="https://github.com/Sakura52008/A-Q-A-system-based-on-ChromaDB-and-Gemini-API-has-been-implemented..git" target="_blank" class="project-btn">Смотреть проект</a>
           </div>
         </div>
 
@@ -151,8 +194,8 @@
           <img src="images/0002.jpg" alt="Скрин React проекта" class="project-img">
           <div class="project-content">
             <h3 data-i18n="projects.react.title">React Memory Game</h3>
-            <p data-i18n="projects.react.desc">Интерактивная игра на React, разработанная с использованием библиотеки <strong>Create React App</strong>. Игроку нужно запоминать и находить пары карточек. Реализованы состояния, таймер, анимации и адаптивный дизайн.</p>
-            <a href="https://github.com/Sakura52008/React-Memory-Game.git" target="_blank" class="project-btn" data-i18n="projects.react.btn">Смотреть проект</a>
+            <p data-i18n="projects.react.desc">Игра на React…</p>
+            <a href="https://github.com/Sakura52008/React-Memory-Game.git" target="_blank" class="project-btn">Смотреть проект</a>
           </div>
         </div>
 
@@ -161,8 +204,8 @@
           <img src="images/003.jpg" alt="Скрин проекта 3" class="project-img">
           <div class="project-content">
             <h3 data-i18n="projects.card4.title">Enter Speed Game</h3>
-            <p data-i18n="projects.card4.desc">Игра на скорость реакции, созданная на Python с использованием библиотеки Tkinter. Игроку нужно как можно быстрее нажимать клавишу <b>Enter</b> в течение 10 раундов. После завершения программа строит график с результатами.</p>
-            <a href="https://github.com/Sakura52008/1" target="_blank" class="project-btn" data-i18n="projects.card4.btn">Смотреть проект</a>
+            <p data-i18n="projects.card4.desc">Игра на скорость реакции…</p>
+            <a href="https://github.com/Sakura52008/1" target="_blank" class="project-btn">Смотреть проект</a>
           </div>
         </div>
       </div>
@@ -173,26 +216,26 @@
   <section id="contacts" class="section contacts">
     <div class="container">
       <h2 data-i18n="contacts.title">Связаться со мной</h2>
-      <p class="contacts-intro" data-i18n="contacts.intro">Если у тебя есть вопросы, предложения или ты хочешь обсудить сотрудничество — напиши мне 👇</p>
+      <p class="contacts-intro" data-i18n="contacts.intro">Если у тебя есть вопросы…</p>
 
       <div class="contacts-grid">
         <div class="contact-card">
           <h3 data-i18n="contacts.social.title">Соцсети</h3>
-          <p data-i18n="contacts.social.text">Я активен в социальных сетях — можешь написать туда напрямую.</p>
+          <p data-i18n="contacts.social.text">Я активен в социальных сетях…</p>
           <div class="contact-links">
-            <a href="https://github.com/Sakura52008" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://t.me/+77058838205" target="_blank" class="contact-link"><i class="fab fa-telegram"></i> Telegram</a>
-            <a href="mailto:menzanorken@example.com" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://github.com/Sakura52008" target="_blank" class="contact-link">GitHub</a>
+            <a href="https://t.me/+77058838205" target="_blank" class="contact-link">Telegram</a>
+            <a href="mailto:menzanorken@example.com" class="contact-link">Email</a>
           </div>
         </div>
 
         <div class="contact-card">
           <h3 data-i18n="contacts.form.title">Отправить сообщение</h3>
           <form action="https://formspree.io/f/mvgzrqwe" method="POST" class="contact-form">
-            <input type="text" name="name" data-i18n="[placeholder]contacts.form.name" placeholder="Ваше имя" required>
-            <input type="email" name="email" data-i18n="[placeholder]contacts.form.email" placeholder="Ваш Email" required>
-            <textarea name="message" rows="4" data-i18n="[placeholder]contacts.form.message" placeholder="Ваше сообщение..." required></textarea>
-            <button type="submit" class="contact-btn" data-i18n="contacts.form.btn">Отправить</button>
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Ваш Email" required>
+            <textarea name="message" rows="4" placeholder="Ваше сообщение..." required></textarea>
+            <button type="submit" class="contact-btn">Отправить</button>
           </form>
         </div>
       </div>
